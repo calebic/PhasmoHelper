@@ -1,15 +1,3 @@
-﻿*Recommended Markdown Viewer: [Markdown Editor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor2)*
-
-## Getting Started
-
-Browse and address `TODO:` comments in `View -> Task List` to learn the codebase and understand next steps for turning the generated code into production code.
-
-Relaunch Template Studio to modify the project by right-clicking on the project in `View -> Solution Explorer` then selecting `Add -> New Item (Template Studio)`.
-
-## Changelog
-
-See [releases](https://github.com/microsoft/TemplateStudio/releases) and [milestones](https://github.com/microsoft/TemplateStudio/milestones).
-
-## Feedback
-
-Bugs and feature requests should be filed at https://aka.ms/templatestudio.
+![Screenshot 2025-03-26 153535](https://github.com/user-attachments/assets/bf41a92e-9b4b-4590-b7e5-4da06577649e)
+![Screenshot 2025-03-26 153547](https://github.com/user-attachments/assets/ea3a9bc4-fc9d-4716-8ce0-db1bda2916f3)
+![Screenshot 2025-03-26 153541](https://github.com/user-attachments/assets/31928138-c80a-4596-810e-7148bf163568)
