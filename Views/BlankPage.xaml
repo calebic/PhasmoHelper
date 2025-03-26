@@ -1,0 +1,88 @@
+﻿<Page NavigationCacheMode="Required"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Microsoft.UI.Xaml.Controls"
+    x:Class="Phasmaphobia_Editor.Views.BlankPage"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d" Width="600" Height="600" Loaded="Page_Loaded">
+    <Grid x:Name="ContentArea" Loaded="ContentArea_Loaded" Unloaded="ContentArea_Unloaded">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="99*"/>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="133*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="EMFReader" TextWrapping="Wrap" Text="" Margin="46,91,397,111"/>
+        <TextBlock HorizontalAlignment="Left" Margin="46,67,0,0" TextWrapping="Wrap" Text="EMF Reader" VerticalAlignment="Top"/>
+        <TextBox x:Name="Flashlights" TextWrapping="Wrap" Text="" Margin="46,156,397,46"/>
+        <TextBlock HorizontalAlignment="Left" Margin="46,132,0,0" TextWrapping="Wrap" Text="Flashlight" VerticalAlignment="Top"/>
+        <TextBox x:Name="Cameras" TextWrapping="Wrap" Text="" Margin="46,221,397,24" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="46,197,0,0" TextWrapping="Wrap" Text="Cameras" VerticalAlignment="Top"/>
+        <TextBox x:Name="Lighters" TextWrapping="Wrap" Text="" Margin="46,9,397,274" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="46,28,0,0" TextWrapping="Wrap" Text="Lighters" VerticalAlignment="Top" Grid.RowSpan="2" Grid.Row="1"/>
+        <TextBox x:Name="Candles" TextWrapping="Wrap" Text="" Margin="46,74,397,209" Grid.Row="2"/>
+        <TextBlock x:Name="Candles7" HorizontalAlignment="Left" Margin="46,50,0,0" TextWrapping="Wrap" Text="Candles" VerticalAlignment="Top" Grid.Row="2"/>
+        <TextBox x:Name="UVFlashlights" TextWrapping="Wrap" Text="" Margin="46,139,397,144" Grid.Row="2"/>
+        <TextBlock x:Name="UV_Flashlights" HorizontalAlignment="Left" Margin="46,115,0,0" TextWrapping="Wrap" Text="UV Flashlight" VerticalAlignment="Top" Grid.Row="2"/>
+        <TextBox x:Name="Crucifixs" TextWrapping="Wrap" Text="" Margin="46,204,397,79" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="46,180,0,0" TextWrapping="Wrap" Text="Crucifixs" VerticalAlignment="Top" Grid.Row="2"/>
+        <TextBox x:Name="Trippods" TextWrapping="Wrap" Text="" Margin="227,157,214,45"/>
+        <TextBlock HorizontalAlignment="Left" Margin="227,133,0,0" TextWrapping="Wrap" Text="Trippods" VerticalAlignment="Top"/>
+        <TextBox x:Name="MotionSensors" TextWrapping="Wrap" Text="" Margin="227,222,214,23" Grid.RowSpan="2"/>
+        <TextBlock x:Name="MotionSensors2" HorizontalAlignment="Left" Margin="227,198,0,0" TextWrapping="Wrap" Text="Motion Sensors" VerticalAlignment="Top" SelectionChanged="MotionSensors2_SelectionChanged"/>
+        <TextBox x:Name="SoundSensors" TextWrapping="Wrap" Text="" Margin="227,10,214,273" Grid.Row="2"/>
+        <TextBlock x:Name="Sound_Sensors" HorizontalAlignment="Left" Margin="227,29,0,0" TextWrapping="Wrap" Text="Sound Sensors" VerticalAlignment="Top" Grid.RowSpan="2" Grid.Row="1"/>
+        <TextBox x:Name="SanityPills" TextWrapping="Wrap" Text="" Margin="227,75,214,208" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="227,51,0,0" TextWrapping="Wrap" Text="Sanity Pills" VerticalAlignment="Top" Grid.Row="2"/>
+        <TextBox x:Name="Thermometers" TextWrapping="Wrap" Text="" Margin="227,140,214,143" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="227,116,0,0" TextWrapping="Wrap" Text="Thermometers" VerticalAlignment="Top" Grid.Row="2"/>
+        <TextBox x:Name="Books" TextWrapping="Wrap" Text="" Margin="227,205,214,78" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="227,181,0,0" TextWrapping="Wrap" Text="Books" VerticalAlignment="Top" Grid.Row="2"/>
+        <TextBox x:Name="DOTS" TextWrapping="Wrap" Text="" Margin="411,142,30,141" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="411,118,0,0" TextWrapping="Wrap" Text="DOTS" VerticalAlignment="Top" Grid.Row="2"/>
+        <TextBox x:Name="Mics" TextWrapping="Wrap" Text="" Margin="411,91,32,111"/>
+        <TextBlock HorizontalAlignment="Left" Margin="411,67,0,0" TextWrapping="Wrap" Text="Mics" VerticalAlignment="Top"/>
+        <TextBox x:Name="GoPro" TextWrapping="Wrap" Text="" Margin="411,156,32,46"/>
+        <TextBlock HorizontalAlignment="Left" Margin="411,132,0,0" TextWrapping="Wrap" Text="GoPro" VerticalAlignment="Top"/>
+        <TextBox x:Name="Salt" TextWrapping="Wrap" Text="" Margin="411,9,32,274" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="411,28,0,0" TextWrapping="Wrap" Text="Salt" VerticalAlignment="Top" Grid.RowSpan="2" Grid.Row="1"/>
+        <TextBox x:Name="Sage" TextWrapping="Wrap" Text="" Margin="411,74,32,209" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="411,50,0,0" TextWrapping="Wrap" Text="Sage" VerticalAlignment="Top" Grid.Row="2"/>
+        <Custom:RatingControl x:Name="uvflashlightstier" Margin="143,112,417,175" Grid.Row="2" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Custom:RatingControl x:Name="candlestier" Margin="106,48,454,239" Grid.Row="2" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Custom:RatingControl x:Name="lighterstier" Margin="108,26,452,304" InitialSetValue="-1" MaxRating="2" Grid.RowSpan="2" Grid.Row="1" Value="1"/>
+        <Custom:RatingControl x:Name="camerastier" Margin="110,195,450,11" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Custom:RatingControl x:Name="flashlighttier" Margin="118,130,442,76" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Custom:RatingControl x:Name="emftier" Margin="124,65,436,141" InitialSetValue="-1" MaxRating="2" Value="0"/>
+        <Custom:RatingControl x:Name="crucifixstier" Margin="106,177,454,110" Grid.Row="2" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Custom:RatingControl x:Name="dotstier" Margin="454,115,106,172" Grid.Row="2" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Custom:RatingControl x:Name="bookstier" Margin="273,178,287,109" Grid.Row="2" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Custom:RatingControl x:Name="thermometerstier" Margin="330,113,230,174" Grid.Row="2" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Custom:RatingControl x:Name="sanitypillstier" Margin="303,48,257,239" Grid.Row="2" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Custom:RatingControl x:Name="soundsensorstier" Margin="329,26,231,304" InitialSetValue="-1" MaxRating="2" Grid.RowSpan="2" Grid.Row="1" Value="1"/>
+        <Custom:RatingControl x:Name="motionsensorstier" Margin="329,195,231,11" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Custom:RatingControl x:Name="tripodstier" Margin="285,130,275,76" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Custom:RatingControl x:Name="micstier" Margin="450,64,110,142" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Custom:RatingControl x:Name="goprotier" Margin="455,129,105,77" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Custom:RatingControl x:Name="salttier" Margin="445,25,115,305" InitialSetValue="-1" MaxRating="2" Grid.RowSpan="2" Grid.Row="1" Value="1"/>
+        <Custom:RatingControl x:Name="sagetier" Margin="450,48,110,239" InitialSetValue="-1" MaxRating="2" Grid.Row="2" Value="1"/>
+        <TextBox x:Name="money" TextWrapping="Wrap" Text="" Margin="46,28,402,178" PlaceholderText="Money"/>
+        <TextBox x:Name="level" TextWrapping="Wrap" Text="" Margin="227,27,215,179" PlaceholderText="Level"/>
+        <TextBox x:Name="prestige" TextWrapping="Wrap" Text="" Margin="411,27,32,179" PlaceholderText="Prestige"/>
+        <TextBlock TextWrapping="Wrap" Text="Money" Margin="46,0,438,216"/>
+        <TextBlock TextWrapping="Wrap" Text="Level" Margin="227,1,257,215"/>
+        <TextBlock TextWrapping="Wrap" Text="Prestige" Margin="411,1,73,215"/>
+        <TextBox x:Name="spiritbox" TextWrapping="Wrap" Text="" Margin="227,91,215,111"/>
+        <TextBlock HorizontalAlignment="Left" Margin="227,67,0,0" TextWrapping="Wrap" Text="Spirit Box" VerticalAlignment="Top"/>
+        <Custom:RatingControl x:Name="spiritboxtier" Margin="291,65,269,141" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <TextBox x:Name="videocameras" TextWrapping="Wrap" Text="" Margin="411,221,32,24" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="411,197,0,0" TextWrapping="Wrap" Text="Video Camera" VerticalAlignment="Top"/>
+        <Custom:RatingControl x:Name="videocamerastier" Margin="507,195,53,11" InitialSetValue="-1" MaxRating="2" Value="1"/>
+        <Button x:Name="save" Content="Save" Margin="109,261,0,0" Grid.Row="2" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox x:Name="SetAll" TextWrapping="Wrap" Text="" Margin="411,219,30,64" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="411,189,0,0" TextWrapping="Wrap" Text="Set All Items" VerticalAlignment="Top" Grid.Row="2"/>
+        <Button x:Name="Set" Content="Set" Margin="514,183,0,0" Grid.Row="2" VerticalAlignment="Top" Click="SetButton_Click" Height="30" Width="54"/>
+        <Button x:Name="open" Content="Open" Margin="49,261,0,0" Grid.Row="2" VerticalAlignment="Top" Click="open_Click"/>
+    </Grid>
+</Page>

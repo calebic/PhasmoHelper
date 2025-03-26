@@ -1,0 +1,4 @@
+MainPackage=C:\Users\icey7\source\repos\Phasmaphobia Editor\Phasmaphobia Editor\bin\x64\Debug\Phasmaphobia Editor_1.0.13.0_x64_Debug.msix
+SymbolPackage=C:\Users\icey7\source\repos\Phasmaphobia Editor\Phasmaphobia Editor\obj\x64\Debug\Symbols\Phasmaphobia Editor_1.0.13.0_x64_Debug.appxsym
+ResourcePack=C:\Users\icey7\source\repos\Phasmaphobia Editor\Phasmaphobia Editor\bin\x64\Debug\Phasmaphobia Editor_1.0.13.0_scale-100.msix
+ResourcePack=C:\Users\icey7\source\repos\Phasmaphobia Editor\Phasmaphobia Editor\bin\x64\Debug\Phasmaphobia Editor_1.0.13.0_scale-400.msix
